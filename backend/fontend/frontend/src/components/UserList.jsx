@@ -13,7 +13,7 @@ function UserList() {
 	}, []);
 
 	// Função para carregar os usuários
-	const fetchUsers = async () => {
+	const fetchUsers = async () => { //async meche com banco de dados...
 		try {
 			const response = await axios.get("http://localhost:3001/users");
 			setUsers(response.data);
@@ -52,3 +52,6 @@ function UserList() {
 }
 
 export default UserList;
+
+//async meche com banco de dados...
+//
